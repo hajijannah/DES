@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DES </title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'poppins';
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #888888;
+            background-color: #2d2d2d;
+            color: #ffffff;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Enkripsi Data</h2>
+    <form action="proses.php" method="post">
+        <label for="data">Data untuk Dienkripsi:</label><br>
+        <textarea id="data" name="data" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Enkripsi">
+    </form>
+
+    <h2>Dekripsi Data</h2>
+    <form action="proses.php" method="post">
+        <label for="encrypted_data">Data Terenkripsi:</label><br>
+        <textarea id="encrypted_data" name="encrypted_data" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Dekripsi">
+    </form>
+</body>
+</html>
